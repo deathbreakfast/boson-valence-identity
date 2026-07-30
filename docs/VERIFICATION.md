@@ -31,5 +31,4 @@ cargo test
 
 - Tests may `unwrap`/`expect`; production paths map failures to typed Boson /
   identity errors (no ordinary-path unwrap).
-- Sad-path assertions check typed variants and message content, not smoke-only
-  `is_err()`.
+- Sad-path assertions check typed variants and message content, (stronger than `is_err()` alone).
